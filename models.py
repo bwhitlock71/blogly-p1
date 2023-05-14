@@ -19,6 +19,6 @@ class User(db.Model):
         return f"{self.first_name} {self.last_name}"
 
 
-def connect_db(app):
-    db.app = app
-    db.init_app(app)
+    def connect_db(app):
+        db.app = app
+        db.init_app(app)
