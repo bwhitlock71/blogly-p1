@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>
+    Blogly {% block title %}{% endblock %}
+  </title>
+ </head>
+<body>
+<nav class="navbar">
+  <a class="navbar-name" href="/">Blogly</a>
+  <ul class="navbar-nav">
+    <li class="nav-item"><a class="nav-link" href="/users">Users</a></li>
+  </ul>
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="btn-add" href="/users/new">Add user</a>
+    </li>
+  </ul>
+</nav>
+<div class="block-content">
+  {% block content %}
+  
+  {% endblock %}
+</div>
+</body>
+</html>
